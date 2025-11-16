@@ -1,8 +1,43 @@
 body { 
-    font-family: Arial, sans-serif; 
-    margin: 20px; 
+    height:100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    background-color: #f7f7f7;
+    text-align: center; 
 }
 
-pre { 
-    white-space: pre-wrap; 
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50; 
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#lyrics {
+    width: 580px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    white-space: pre-wrap; /* preserves line breaks */
+    text-align: left;
 }
